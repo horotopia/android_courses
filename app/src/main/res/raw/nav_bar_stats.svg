@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icons8-investment_portfolio</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tab_stats_off" transform="translate(-35.000000, -13.000000)" fill="#687289" fill-rule="nonzero">
+            <g id="icons8-investment_portfolio" transform="translate(35.000000, 13.000000)">
+                <path d="M11,0.0507812 C5.172,0.5327813 0.5327813,5.172 0.0507812,11 L11,11 L11,0.0507812 Z M13,0.0507812 L13,11.585938 L21.158203,19.744141 C22.927203,17.653141 24,14.954 24,12 C24,5.71 19.158,0.5607813 13,0.0507812 Z M0.0507812,13 C0.5607813,19.158 5.71,24 12,24 C14.954,24 17.653141,22.927203 19.744141,21.158203 L11.585938,13 L0.0507812,13 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

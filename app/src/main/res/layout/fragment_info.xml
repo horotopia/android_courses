@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/A1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/A2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/A2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pour 100g"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        app:border="right|bottom"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/A1"
+        app:layout_constraintEnd_toStartOf="@id/A3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/A3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Par part"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        app:border="right|bottom"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/A2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/B1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Energie"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/A1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/B2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="293 kj"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/A2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/B3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/A3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/C1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Matières grasses"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/B1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/C2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0.8 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/B2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/C3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/B3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/D1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Acides gras saturés"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/C1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/D2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0.1 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/C2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/D3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/C3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/E1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Glucides"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/D1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/E2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="8.4 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/D2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/E3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/D3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/F1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sucres"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/E1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/F2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5.2 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/E2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/F3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/E3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/G1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fibre alimentaires"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/F1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/G2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5.2 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/F2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/G3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/F3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/H1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Protéines"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/G1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/H2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4.2 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/G2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/H3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/G3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/I1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sel"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/H1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/I2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0.75 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/H2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/I3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/H3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/J1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sodium"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingLeft="5dp"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/I1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/B2" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/J2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0.295 g"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/I2"
+        app:layout_constraintStart_toEndOf="@id/B1"
+        app:layout_constraintEnd_toStartOf="@id/B3" />
+
+    <com.example.myapplication.TableCellView
+        android:id="@+id/J3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        app:border="right|bottom"
+        app:layout_constraintTop_toBottomOf="@id/I3"
+        app:layout_constraintStart_toEndOf="@id/B2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

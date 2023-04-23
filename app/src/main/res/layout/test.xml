@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petits pois et carottes"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Cassegrain"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/nutriScore"
+            android:layout_width="78dp"
+            android:layout_height="42dp"
+            android:src="@drawable/nutri_score_e"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Code barres : 3083680085304"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Quantité : 400 g (280 g net égoutté)"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Vendu en : France, Japon, Suisse"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrédients : Petits pois 66%, eau, garniture 2,8% (Salade, oignon, grelot), sucre, sel, arôme naturel"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/substance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Substances Allergènes : Aucune"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/addictif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="additives : Aucun"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>

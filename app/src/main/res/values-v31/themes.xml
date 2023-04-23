@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApplication" parent="ParentTheme">
+        <!-- Customize your theme here. -->
+        <!-- Point 1-->
+        <item name="android:windowSplashScreenAnimatedIcon">
+            @drawable/logo</item>
+        <!-- Point 2-->
+        <item name="android:windowSplashScreenIconBackgroundColor">
+            #000000</item>
+        <!-- Point 3-->
+        <item name="android:windowSplashScreenBackground">#ED4CAF50</item>
+        <!-- Point 4-->
+        <!--<item name="android:windowSplashScreenBrandingImage">
+            @drawable/relam_horizontal</item>-->
+    </style>
+</resources>

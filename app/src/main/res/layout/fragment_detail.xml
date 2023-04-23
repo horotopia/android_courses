@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Petits pois et carottes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/nutriScore"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Cassegrain"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/nutriScore"
+        />
+    <ImageView
+        android:id="@+id/nutriScore"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        tools:src="@drawable/nutri_score_e"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        />
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Code barres : 3083680085304"
+        android:textSize="15sp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/brand"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Quantité : 400 g (280 g net égoutté)"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/barcode"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        />
+
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Vendu en : France, Japon, Suisse"
+        android:textSize="15sp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/quantity"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Ingrédients : Petits pois 66%, eau, garniture 2,8% (Salade, oignon, grelot), sucre, sel, arôme naturel"
+        android:textSize="15sp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/sale"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        />
+    <TextView
+        android:id="@+id/substance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Substances Allergènes : Aucune"
+        android:textSize="15sp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ingredient"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        />
+
+    <TextView
+        android:id="@+id/addictif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="additives : Aucun"
+        android:textSize="15sp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/substance"
+        app:layout_constraintStart_toEndOf="@id/startGuideline"
+        app:layout_constraintEnd_toStartOf="@id/endGuideline"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
