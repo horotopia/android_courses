@@ -77,6 +77,6 @@ class ProductDetailFragment: Fragment(){
         val text = "$prefix : $value"
         val builder = SpannableStringBuilder(text)
         builder.setSpan(StyleSpan(Typeface.BOLD), 0, text.indexOf(":") + 1, 0)
-        setText(builder)
-    }*/
+        setText(builder)*/
+    }
 }
